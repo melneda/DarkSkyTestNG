@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13449" started-at="2020-08-09T16:50:11Z" finished-at="2020-08-09T16:50:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13449" started-at="2020-08-09T16:50:11Z" finished-at="2020-08-09T16:50:24Z">
+      <class name="com.qa.darksky.tests.HomePageTest2">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.darksky.tests.HomePageTest2@395b56bb]" name="setUp" is-config="true" duration-ms="9564" started-at="2020-08-09T12:50:11Z" finished-at="2020-08-09T12:50:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="doclicktoday()[pri:1, instance:com.qa.darksky.tests.HomePageTest2@395b56bb]" name="doclicktoday" duration-ms="1442" started-at="2020-08-09T12:50:20Z" finished-at="2020-08-09T12:50:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doclicktoday -->
+        <test-method status="FAIL" signature="getLowestTempandVerify()[pri:2, instance:com.qa.darksky.tests.HomePageTest2@395b56bb]" name="getLowestTempandVerify" duration-ms="425" started-at="2020-08-09T12:50:22Z" finished-at="2020-08-09T12:50:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [76] but found [72]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [76] but found [72]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.qa.darksky.pages.HomePage2.getLowestTemps(HomePage2.java:61)
+	at com.qa.darksky.tests.HomePageTest2.getLowestTempandVerify(HomePageTest2.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLowestTempandVerify -->
+        <test-method status="FAIL" signature="getHighestValueandVerify()[pri:3, instance:com.qa.darksky.tests.HomePageTest2@395b56bb]" name="getHighestValueandVerify" duration-ms="272" started-at="2020-08-09T12:50:22Z" finished-at="2020-08-09T12:50:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [87] but found [88]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [87] but found [88]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.qa.darksky.pages.HomePage2.gethighesttemps(HomePage2.java:79)
+	at com.qa.darksky.tests.HomePageTest2.getHighestValueandVerify(HomePageTest2.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getHighestValueandVerify -->
+        <test-method status="PASS" signature="quitpage()[pri:0, instance:com.qa.darksky.tests.HomePageTest2@395b56bb]" name="quitpage" is-config="true" duration-ms="1550" started-at="2020-08-09T12:50:22Z" finished-at="2020-08-09T12:50:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitpage -->
+      </class> <!-- com.qa.darksky.tests.HomePageTest2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
